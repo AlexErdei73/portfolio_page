@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <meta charset = "UTF-8">
+        <style>
+            body{
+                background: linear-gradient(to left, skyblue, lightgreen);
+            }
+            .calculator{
+                float: left;
+                width: 600px;
+                height: 750px;
+                margin: 20px auto;
+                background: linear-gradient( silver, lightslategray);
+                border: 3px solid black;
+                border-radius: 10px;
+                box-shadow: 5px 5px black;
+                color : transparent;
+                text-shadow : 0 0 0 #000;
+            }
+            .display{
+                width: 572px;
+                height: 88px;
+                margin: 10px;
+                margin-top: 50px;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-shadow: inset 5px 5px black;
+                background: olive;
+                float: left;
+                text-align: right;
+                font-size: 70px;
+            }
+            .key{
+                width: 84px;
+                height: 54px;
+                border: 1px solid black;
+                border-radius: 5px;
+                float: left;
+                text-align: center;
+                padding: 12px;
+                font-size: 40px;
+                margin: 20px;
+                box-shadow: 5px 5px black;
+            }
+            .down{
+                box-shadow: none;
+                margin-top: 25px;
+                margin-left: 25px;
+                margin-bottom: 15px;
+                margin-right: 15px;
+            }
+            .number{
+                background:white;
+            }
+            .number:hover{
+                background:silver;
+            }
+            .op{
+                background:green;
+                color: transparent;
+                text-shadow: 0 0 0 white;
+            }
+            .op:hover{
+                background:darkgreen;
+            }
+            #idequal{
+                width: 234px;
+                background: dodgerblue;
+                text-shadow:snow;
+            }
+            #idequal:hover{
+                background:rgb(30, 109, 255);
+            }
+            #idac{
+                background:red;
+                text-shadow:snow;
+            }
+            #idac:hover{
+                background:darkred;
+            }
+            .text{
+                display: block;
+                float: left;
+                width: 800;
+                margin: 20px 100px;
+                border: 1px solid black;
+                text-align: left;
+            }
+            p {
+                width: 700px;
+                padding: 20px 50px;
+                font-size: 1.45em;
+            }
+            a {
+                padding:0 60px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text">
+            <p>
+                Have you ever been wondering, why were calculators so exciting for you, when you were just a little child?
+                No it's not the calculation abilities ... You might have liked keepnig on pressing the buttons and the display did 
+                strange things ... Why was it so exciting?
+            </p>
+            <p>
+                The status of the calculator depends on the previous couple of keypresses, especially if it gives responses to irregular
+                input too. Just keep on pushing the = button and put there sometimes some number ... Nice. And it seems to be a bit complex.
+                Can you program this behaviour? Just like a real calculator? There is a bit of complexity here, so it's good fun:) 
+            </p>
+            <p>
+                Play with the calculator a bit on this page then you can check other solutions on the student solution page of the odin project.
+                How many people managed to acomplish the real calculator? 
+            </p>
+            <p>
+                <a href="https://www.theodinproject.com/courses/web-development-101/lessons/calculator#student-solutions">Student Solutions</a>
+                <a href="https://github.com/AlexErdei73/calculator">Program Code</a>
+            </p>
+        </div>
+        <div class="calculator">
+            <div class="display">9999</div>
+            <div class="key number" id="idsign">+/-</div>
+            <div class="key number" id="idc">C</div>
+            <div class="key op" id="idac">AC</div>
+            <div class="key op" id="idadd">+</div>
+            <div class="key number" id="id1">1</div>
+            <div class="key number" id="id2">2</div>
+            <div class="key number" id="id3">3</div>
+            <div class="key op" id="idsub">-</div> 
+            <div class="key number" id="id4">4</div>
+            <div class="key number" id="id5">5</div>
+            <div class="key number" id="id6">6</div>
+            <div class="key op" id="idmul">*</div> 
+            <div class="key number" id="id7">7</div>
+            <div class="key number" id="id8">8</div>
+            <div class="key number" id="id9">9</div>
+            <div class="key op" id="iddiv">/</div>
+            <div class="key number" id="id0">0</div>
+            <div class="key number" id="iddot">.</div>
+            <div class="key op" id="idequal">=</div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

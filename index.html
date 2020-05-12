@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alex Erdei</title>
+        <meta charset = "UTF-8">
+        <style>
+            body{
+                background-image:url("Image/code_background.png");
+                background-color: rgb(29, 29, 29);
+                color: lime;
+            }
+            h1 {
+                text-align: center;
+                color:magenta;
+            }
+            h2 {
+                text-align: center;
+                color:cyan;
+            }
+            .imgcontainer {
+                position: relative;
+                width: 1100px;
+                height: 400px;
+                margin: auto;
+                margin-top: 100px;
+            }
+            img {
+               width: 500px;
+               margin: 20px;
+               box-shadow: 5px 5px black; 
+            }
+            img:hover{
+                width: 540px;
+                margin: 0;
+                box-shadow: 20px 20px black;
+            }
+            .imgCaption{
+                font-size: x-large;
+            }
+            a {
+                display: block;
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                color: lime;
+            }
+            a p{
+                position:absolute;
+                width: 500px;
+                border: 1px solid lime;
+                background: rgb(29, 29, 29);
+                top: 300px;
+                margin: 0 20px;
+            }
+            .introduction{
+                display:block;
+                width: 600px;
+                margin: auto;
+                font-size: x-large;
+            }
+            .sidebar{
+                float: right;
+                width: 300px;
+            }
+            .button{
+                display: block;
+                width: 200px;
+                height: 50px;
+                background: dodgerblue;
+                color:magenta;
+                clear: right;
+                margin: 20px;
+                box-shadow: 5px 5px black;
+            }
+            .button div{
+                margin-top: 15px;
+            }
+            .button:hover{
+                background: cyan;
+                color: black;
+                box-shadow: 10px 10px black;
+                margin-top: 15px;
+                margin-left: 15px;
+                margin-right: 25px;
+                margin-bottom: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Alex Erdei</h1>
+        </header>
+        <h2>Welcome to my first portfolio page!</h2>
+
+        <div class="sidebar">
+            <a class="button" href="introduction.html"><div>Introduction</div></a>
+            <a class="button" href="education.html"><div>Education</div></a>
+            <a class="button" href=""><div>Work Experiance</div></a>
+            <a class="button" href="https://github.com/AlexErdei73"><div>GitHub</div></a>
+            <a class="button" href="contact.html"><div>Contact</div></a>
+        </div>
+        
+        <div class="imgcontainer">
+            <a class="toyproject" href="calculator.html"><img src="Image/calculator.png"><p class="imgCaption">Toy Project</p></a>
+            <a class="businesproject" href="salt.html"><img src="Image/salt.png"><p class="imgCaption">Business Project</p></a>
+        </div>
+
+        <p class="introduction">
+            Please take some time to have a look at two of my recent projects. I have chosen these two carefully for you to demonstrate
+            my strengths and weeknesses. I hope you will enjoy just as much as I enjoyed the development. Have some fun ...
+        </p>
+        <script src="main.js"></script>
+    </body>
+</html>
